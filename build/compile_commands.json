@@ -1,0 +1,80 @@
+[
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/main.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/main.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/main.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/Grid.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Grid.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Grid.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/Grid.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Initialise.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Initialise.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/MHD_flux.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/MHD_flux.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SavingRoutine.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SavingRoutine.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/StateVector.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/StateVector.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SLIC.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SLIC.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/TimeStep.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/TimeStep.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/c_f.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/c_f.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/c_f.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/c_f.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/psi_source_term.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/psi_source_term.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/HLLD.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/HLLD.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include\" -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -Werror -pg -o CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp",
+  "output": "CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o"
+},
+{
+  "directory": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/math",
+  "command": "/usr/bin/clang++  -I\"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math\" -g -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/math_module.dir/Vector3.cpp.o -c \"/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math/Vector3.cpp\"",
+  "file": "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math/Vector3.cpp",
+  "output": "math/CMakeFiles/math_module.dir/Vector3.cpp.o"
+}
+]
