@@ -1,0 +1,9 @@
+#Choose files for git to ignore
+
+#DoubleSheetData is a bunch of data csvs
+DoubleSheetData/*
+
+
+#Ignore temporary filetypes
+*.tmp
+*.log

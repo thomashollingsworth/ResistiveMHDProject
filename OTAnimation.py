@@ -6,10 +6,10 @@ import seaborn as sns
 import re
 import matplotlib.animation as animation
 
-source_dir = "NoResOTData/"
-save_name = "NoResDensityAni"
+source_dir = "DoubleSheetData/"
+save_name = "DoubleSheetAni"
 
-files = [f for f in os.listdir(source_dir) if not f.endswith(".png")]
+files = [f for f in os.listdir(source_dir) if not f.endswith(".png")][::5]
 
 
 def extract_time(filename):
@@ -34,8 +34,8 @@ column_names = [
     "J_z",
 ]
 
-num_x = 512
-num_y = 512
+num_x = 200
+num_y = 200
 
 
 def convert_to_2D(row, num_xvalues, num_yvalues):
@@ -52,7 +52,7 @@ first_data = pd.read_csv(
     skip_blank_lines=True,
     names=column_names,
 )
-density = convert_to_2D(first_data["density"], num_x, num_y)
+density = convert_to_2D(first_data["J_z"], num_x, num_y)
 hm = sns.heatmap(density, cmap="magma", cbar=False, ax=ax)
 ax.set_xticks([])
 ax.set_yticks([])
@@ -68,10 +68,11 @@ def update(frame_idx):
         skip_blank_lines=True,
         names=column_names,
     )
-    density = convert_to_2D(raw_data["density"], num_x, num_y)
+    density = convert_to_2D(raw_data["J_z"], num_x, num_y)
     sns.heatmap(density, cmap="magma", cbar=False, ax=ax)
     ax.set_xticks([])
     ax.set_yticks([])
+    print(f"Completed Frame {frame_idx}/{len(sorted_files)}")
     return []
 
 
