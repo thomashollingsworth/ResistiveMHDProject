@@ -56,7 +56,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -arch arm64"
+					"fragment" : "-std=gnu++17 -arch arm64"
 				},
 				{
 					"backtrace" : 3,
@@ -83,11 +83,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/include"
+					"path" : "/Users/tomhollingsworth/Documents/ResistiveMHDProject/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/math"
+					"path" : "/Users/tomhollingsworth/Documents/ResistiveMHDProject/math"
 				}
 			],
 			"language" : "CXX",
@@ -128,10 +128,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "-Wl,-search_paths_first -Wl,-headerpad_max_install_names",
 				"role" : "flags"

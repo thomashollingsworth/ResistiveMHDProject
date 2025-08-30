@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -24,7 +24,7 @@
 				},
 				{
 					"build" : "math",
-					"jsonFile" : "directory-math-Debug-71457bd15370d33fb0dd.json",
+					"jsonFile" : "directory-math-71457bd15370d33fb0dd.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -38,7 +38,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -60,14 +60,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "math_module::@874b28b4c7a3e614380d",
-					"jsonFile" : "target-math_module-Debug-5ae0ca625a378d900a0d.json",
+					"jsonFile" : "target-math_module-8458aebf122e4dcf060a.json",
 					"name" : "math_module",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "mhd_solver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mhd_solver-Debug-becb3396c7766df99d2c.json",
+					"jsonFile" : "target-mhd_solver-0596b54d9a7890604987.json",
 					"name" : "mhd_solver",
 					"projectIndex" : 0
 				}
@@ -77,8 +77,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build",
-		"source" : "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject"
+		"build" : "/Users/tomhollingsworth/Documents/ResistiveMHDProject/build",
+		"source" : "/Users/tomhollingsworth/Documents/ResistiveMHDProject"
 	},
 	"version" : 
 	{

@@ -58,7 +58,7 @@ struct SimulationConfig{
     };
     struct Uniform : ResProfile{
         Type profile_type= Type::Uniform;
-        double const_value=1e-4;
+        double const_value;
         Uniform(double v) : const_value(v) {};
         double operator()(double /*x*/, double /*y*/) const override{
             return const_value; //Each x,y point is set to const_value

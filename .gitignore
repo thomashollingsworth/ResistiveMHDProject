@@ -1,7 +1,11 @@
 #Choose files for git to ignore
 
-#DoubleSheetData is a bunch of data csvs
-DoubleSheetData/*
+#Files I dont want to track to github
+animations/
+literature/
+report/
+testresults/
+
 
 
 #Ignore temporary filetypes

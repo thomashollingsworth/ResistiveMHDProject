@@ -16,15 +16,16 @@
 
 int main() {
 //Grid will hold all 2D arrays and data for intermediate values
-Grid grid(200,200);
+Grid grid(128,256);
 //Simulation config is used to control parameters of the test
 SimulationConfig cfg;
 
 cfg.C=0.8;
 
-cfg.save_directory="DoubleSheetData";
+cfg.save_directory="KelvinHelmholtzData";
 
-cfg.initialcondition= SimulationConfig::InitialCondition::DoubleCurrentSheet;
+cfg.initialcondition= SimulationConfig::InitialCondition::KelvinHelmholtz;
+
 cfg.save_interval=10;
 cfg.plot_interval=20;
 
@@ -33,7 +34,6 @@ cfg.plot_interval=20;
 //Initialise function sets up grid using the simulation config settings
 
 initialise(grid,cfg);
-
 
 double time=0;
 int iteration=0;
@@ -50,11 +50,14 @@ do{
     iteration+=1;
 
     do_half_psi_update(grid);
+    update_bcs(grid,cfg,grid.U);//ALL U cells are now updated
+    
     //Resistive term updates only update U
-    do_ResistiveRK2_subcycle(grid,cfg);
+    //do_ResistiveRK2_subcycle(grid,cfg);
     UpdatePrim(grid,cfg);
     
     do_SLIC_xupdate(grid,cfg);//Requires up to date U and Prim
+
     do_HLLD_x_update(grid,cfg);//HLLD only updates U
 
     grid.reset_intermediate_arrays();
@@ -62,13 +65,14 @@ do{
     UpdatePrim(grid,cfg);
     
     do_SLIC_yupdate(grid,cfg);//Requires up to date U and Prim
+
     do_HLLD_y_update(grid,cfg);//HLLD only updates U
 
     grid.reset_intermediate_arrays();
 
     do_half_psi_update(grid);
     //Resistive term updates only update U
-    do_ResistiveRK2_subcycle(grid,cfg);
+    //do_ResistiveRK2_subcycle(grid,cfg);
     UpdatePrim(grid,cfg);
 
     std::cout<<"Iteration " <<iteration << " completed t= "<<time<<std::endl;

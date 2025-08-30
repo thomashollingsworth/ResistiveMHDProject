@@ -6,8 +6,8 @@ import seaborn as sns
 import re
 import matplotlib.animation as animation
 
-source_dir = "DoubleSheetData/"
-save_name = "DoubleSheetAni"
+source_dir = "GEMData/"
+save_name = "GEMAni"
 
 files = [f for f in os.listdir(source_dir) if not f.endswith(".png")][::5]
 
@@ -34,12 +34,9 @@ column_names = [
     "J_z",
 ]
 
-num_x = 200
-num_y = 200
-
 
 def convert_to_2D(row, num_xvalues, num_yvalues):
-    return row.to_numpy().reshape((num_yvalues, num_xvalues))
+    return row.to_numpy().reshape(num_xvalues, num_yvalues).T
 
 
 fig, ax = plt.subplots(figsize=(8, 6))
@@ -52,6 +49,12 @@ first_data = pd.read_csv(
     skip_blank_lines=True,
     names=column_names,
 )
+
+xdata = np.unique(first_data["x"])
+ydata = np.unique(first_data["y"])
+num_x = len(xdata)
+num_y = len(ydata)
+
 density = convert_to_2D(first_data["J_z"], num_x, num_y)
 hm = sns.heatmap(density, cmap="magma", cbar=False, ax=ax)
 ax.set_xticks([])

@@ -9,6 +9,7 @@ double get_E_timestep(Grid& grid){
     size_t g=grid.ghost_cells;
     
     double max_Bsquared=0;
+    //Only need to consider real cells
     for(size_t i=g;i<nx+g;i++){
         for(size_t j=g;j<ny+g;j++){
             double B_squared =grid.B(i,j).magsquared();
@@ -24,6 +25,7 @@ void assign_Resistive_buffers(Grid& grid){
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
+    //Copies across all cells (ghosts included)
     for(size_t i=0;i<nx+2*g;i++){
         for(size_t j=0;j<ny+2*g;j++){
             grid.B(i,j)= Vector3(grid.U(i,j).B().x(),grid.U(i,j).B().y(),grid.U(i,j).B().z());
@@ -35,8 +37,9 @@ void buffers_to_U(Grid& grid){
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
+    //Updates ALL cells for U
     for(size_t i=g;i<nx+g;i++){
-        for(size_t j=0;j<ny+g;j++){
+        for(size_t j=g;j<ny+g;j++){
             grid.U(i,j).B().x()= grid.B(i,j).x();
             grid.U(i,j).B().y()= grid.B(i,j).y();
             grid.U(i,j).B().z() = grid.B(i,j).z();
@@ -47,7 +50,7 @@ void update_LaplacianB_buffers(Grid& grid){
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
-
+//Laplacian only defined for real cells
 for(size_t i=g;i<nx+g;i++){
         for(size_t j=g;j<ny+g;j++){
             grid.LaplacianB(i,j)=Laplacian2D<Array2D<Vector3>, Vector3>(i,j,grid.B,grid.dx,grid.dy);}}
@@ -72,7 +75,7 @@ void do_RK_step(Grid& grid,double dt){
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
     
-    
+    //Update all real cells 
     for(size_t i=g;i<nx+g;i++){
         for(size_t j=g;j<ny+g;j++){
             Vector3 JcrossGradEta =cross(grid.J(i,j),grid.grad_eta(i,j));
@@ -86,28 +89,28 @@ void do_RK_step(Grid& grid,double dt){
 
 void do_ResistiveRK2_subcycle(Grid& grid,const SimulationConfig& cfg){
     double subtime=0;
-    size_t subcycle_count=0;
-    
+
     double tf= grid.dt/2.; //Do a half step either side of main HLLD loop
-    assign_Resistive_buffers(grid);
+    assign_Resistive_buffers(grid); //sets all cells (real + ghost) for grid.B only done at beginning of subcycling
 
     while(subtime<tf){
         
         double E_time=get_E_timestep(grid);
         double timestep=std::min({E_time,grid.B_timestep,(tf-subtime)});
         subtime+=timestep;
-        //Perform RK1 loop
+        //Perform RK2 loop
+        update_LaplacianB_buffers(grid);
+        update_J_buffers(grid);
+        do_RK_step(grid,timestep/2);//Only real cells are updated in this step
+        update_bcs(grid,cfg,grid.B); //Need to update ghost cells to correctly recalc. Laplacian
+        
         update_LaplacianB_buffers(grid);
         update_J_buffers(grid);
         do_RK_step(grid,timestep/2);
-        
-        // update_LaplacianB_buffers(grid);
-        // update_J_buffers(grid);
-        // do_RK_step(grid,timestep/2);
-        subcycle_count+=1;
+        update_bcs(grid,cfg,grid.B);
+        //All real + ghost grid.B cells are now up to date for process to repeat
     }
-    std::cout<<"Completed "<< subcycle_count << " subcycles" << std::endl;
-    buffers_to_U(grid);
-    update_bcs(grid,cfg, grid.U);
+    buffers_to_U(grid);//Updates real U cells
+    update_bcs(grid,cfg,grid.U);//ALL U cells are now updated
 
 }

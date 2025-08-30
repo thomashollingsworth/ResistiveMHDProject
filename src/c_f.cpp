@@ -31,8 +31,8 @@ void set_c_h(Grid& grid, const SimulationConfig& cfg,const Array2D<PSV>& prim_ar
     double c_fz;
     double max_ch=0;
   
-    for(size_t i=0;i<nx+2*g;i++){
-        for(size_t j=0;j<ny+2*g;j++){
+    for(size_t i=g;i<nx+g;i++){
+        for(size_t j=g;j<ny+g;j++){
             calc_cf_x(cfg.gamma,c_fx,prim_array(i,j));
             calc_cf_y(cfg.gamma,c_fy,prim_array(i,j));
             calc_cf_z(cfg.gamma,c_fz,prim_array(i,j));

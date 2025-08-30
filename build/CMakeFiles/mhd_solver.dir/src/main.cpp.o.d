@@ -1,7 +1,7 @@
 CMakeFiles/mhd_solver.dir/src/main.cpp.o: \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/main.cpp \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Grid.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/StateVector.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/main.cpp \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Grid.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/StateVector.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -745,8 +745,8 @@ CMakeFiles/mhd_solver.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/math/Vector3.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Array2D.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/math/Vector3.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Array2D.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -849,10 +849,10 @@ CMakeFiles/mhd_solver.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/SimulationConfig.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Initialise.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/BoundaryConditions.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/SavingRoutine.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/SimulationConfig.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Initialise.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/BoundaryConditions.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/SavingRoutine.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
@@ -877,11 +877,11 @@ CMakeFiles/mhd_solver.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/MHD_flux.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/c_f.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/TimeStep.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/SLIC.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/HLLD.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/psi_source_term.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Resistive_source_terms.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/math/VectorCalc.h
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/MHD_flux.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/c_f.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/TimeStep.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/SLIC.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/HLLD.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/psi_source_term.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Resistive_source_terms.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/math/VectorCalc.h

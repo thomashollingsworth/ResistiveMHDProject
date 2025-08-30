@@ -16,8 +16,8 @@ void redefine_LRx(Grid& grid){
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
-    for(size_t i=1;i<nx+2*g-2;i++){
-        for(size_t j=1;j<ny+2*g-2;j++){
+    for(size_t i=1;i<nx+g;i++){
+        for(size_t j=1;j<ny+g;j++){
             auto tempL=grid.uBarR(i,j);
             auto tempR=grid.uBarL(i+1,j);
 
@@ -30,8 +30,8 @@ void redefine_LRy(Grid& grid){
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
     size_t g=grid.ghost_cells;
-    for(size_t i=1;i<nx+2*g-2;i++){
-        for(size_t j=1;j<ny+2*g-2;j++){
+    for(size_t i=1;i<nx+g;i++){
+        for(size_t j=1;j<ny+g;j++){
             auto tempL=grid.uBarR(i,j);
             auto tempR=grid.uBarL(i,j+1);
 
@@ -48,8 +48,8 @@ void set_xtilde_vals(Grid& grid){
     const double factorB=0.5*1./grid.c_h;
     const double factorPsi=0.5*grid.c_h;
     
-    for(size_t i=1;i<nx+2*g-2;i++){
-        for(size_t j=1;j<ny+2*g-2;j++){
+    for(size_t i=1;i<nx+g;i++){
+        for(size_t j=1;j<ny+g;j++){
             double B_xtilde=0.5*(grid.uBarL(i,j).B().x()+grid.uBarR(i,j).B().x())-factorB*(grid.uBarR(i,j).psi()-grid.uBarL(i,j).psi());
             double psi_tilde=0.5*(grid.uBarR(i,j).psi()+grid.uBarL(i,j).psi())-factorPsi*(grid.uBarR(i,j).B().x()-grid.uBarL(i,j).B().x());
             
@@ -67,8 +67,8 @@ void set_ytilde_vals(Grid& grid){
     const double factorB=0.5*1./grid.c_h;
     const double factorPsi=0.5*grid.c_h;
 
-    for(size_t i=1;i<nx+2*g-2;i++){
-        for(size_t j=1;j<ny+2*g-2;j++){
+    for(size_t i=1;i<nx+g;i++){
+        for(size_t j=1;j<ny+g;j++){
             double B_ytilde=0.5*(grid.uBarL(i,j).B().y()+grid.uBarR(i,j).B().y())-factorB*(grid.uBarR(i,j).psi()-grid.uBarL(i,j).psi());
             double psi_tilde=0.5*(grid.uBarR(i,j).psi()+grid.uBarL(i,j).psi())-factorPsi*(grid.uBarR(i,j).B().y()-grid.uBarL(i,j).B().y());
             
@@ -76,7 +76,6 @@ void set_ytilde_vals(Grid& grid){
             grid.uBarL(i,j).B().y()=B_ytilde;
             grid.uBarR(i,j).psi()=psi_tilde;
             grid.uBarL(i,j).psi()=psi_tilde;
-
 }}
 }
 
@@ -186,7 +185,7 @@ void calc_u_starLR_y(bool L,CSV& output,const double S_M,const double S_L,const 
     output.momentum().y()=output.density()*S_M;
     
     double vel_denom= (p.density()*(S-p.velocity().y())*(S-S_M)-p.B().y()*p.B().y());
-    if (vel_denom<TOL){
+    if (std::fabs(vel_denom)<TOL){
         output.momentum().x()=output.density()*p.velocity().x();
         output.momentum().z()=output.density()*p.velocity().z();
     }
@@ -197,7 +196,7 @@ void calc_u_starLR_y(bool L,CSV& output,const double S_M,const double S_L,const 
     output.B().y()=p.B().y();
 
     double B_denom=(p.density()*(S-p.velocity().y())*(S-S_M)-p.B().y()*p.B().y());
-    if (B_denom<TOL){
+    if (std::fabs(B_denom)<TOL){
         output.B().x()=0.;
         output.B().z()=0.;
     }
@@ -376,8 +375,6 @@ void do_HLLD_x_update(Grid& grid, const SimulationConfig& cfg){
    
     redefine_LRx(grid);
     set_xtilde_vals(grid);
-    update_bcs(grid,cfg,grid.uBarL);
-    update_bcs(grid,cfg,grid.uBarR);
 
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;
@@ -391,16 +388,11 @@ void do_HLLD_x_update(Grid& grid, const SimulationConfig& cfg){
             
             calc_HLLD_flux_x(grid,flux_temp,grid.primL(i,j),grid.primR(i,j),grid.uBarL(i,j),grid.uBarR(i,j),cfg.gamma);
 
-            grid.U(i,j)-=grid.dt/grid.dy*flux_temp;
-            grid.U(i+1,j)+=grid.dt/grid.dy*flux_temp;
+            grid.U(i,j)-=grid.dt/grid.dx*flux_temp;
+            grid.U(i+1,j)+=grid.dt/grid.dx*flux_temp;
         }}
 
 update_bcs(grid,cfg,grid.U);
-
-for(size_t i=0;i<nx+2*g;i++){
-        for(size_t j=0;j<ny+2*g;j++){
-            grid.U(i,j).con_to_prim(grid.Prim(i,j),cfg.gamma);//Updates both primitive and conserved data
-}}
 }
 
 
@@ -408,8 +400,6 @@ void do_HLLD_y_update(Grid& grid, const SimulationConfig& cfg){
     //Starting with ubarplus states after SLIC method
     redefine_LRy(grid);
     set_ytilde_vals(grid);
-    update_bcs(grid,cfg,grid.uBarL);
-    update_bcs(grid,cfg,grid.uBarR);
     
     size_t nx=grid.num_xcells;
     size_t ny=grid.num_ycells;

@@ -9,9 +9,9 @@ void set_xy(Grid& grid,const double x0,const double xf,const double y0,const dou
         for(size_t i=0;i<nx;i++){
             grid.x[i]=x0+(0.5+i)*grid.dx;}
         
-        grid.dy=(yf-y0)/nx;
-        for(size_t i=0;i<ny;i++){
-            grid.y[i]=y0+(0.5+i)*grid.dy;}
+        grid.dy=(yf-y0)/ny;
+        for(size_t j=0;j<ny;j++){
+            grid.y[j]=y0+(0.5+j)*grid.dy;}
 }
 
 void initialise(Grid& grid, SimulationConfig& cfg){
@@ -268,14 +268,14 @@ void initialise(Grid& grid, SimulationConfig& cfg){
         
         for(size_t i=g; i<nx+g;i++){
         for(size_t j=g;j<ny+g;j++){
-            grid.Prim(i,j)[0]=cfg.gamma*cfg.gamma;
-            grid.Prim(i,j)[1]=-std::sin(2*pi*grid.y[j-g]);
-            grid.Prim(i,j)[2]=std::sin(2*pi*grid.x[i-g]);
+            grid.Prim(i,j)[0]=1;
+            grid.Prim(i,j)[1]=0.5*std::tanh(20*grid.y[j-g]);
+            grid.Prim(i,j)[2]=0.01*std::sin(2*pi*grid.x[i-g])*std::exp(-grid.y[j-g]*grid.y[j-g]/0.01);
             grid.Prim(i,j)[3]=0.;
-            grid.Prim(i,j)[4]=cfg.gamma;
-            grid.Prim(i,j)[5]=-std::sin(2*pi*grid.y[j-g]);
-            grid.Prim(i,j)[6]=std::sin(4*pi*grid.x[i-g]);
-            grid.Prim(i,j)[7]=0;
+            grid.Prim(i,j)[4]=1./cfg.gamma;
+            grid.Prim(i,j)[5]=0.1*std::cos(pi/3.);
+            grid.Prim(i,j)[6]=0;
+            grid.Prim(i,j)[7]=0.1*std::sin(pi/3.);
             grid.Prim(i,j)[8]=0;
         grid.U(i,j)=grid.Prim(i,j).prim_to_con(cfg.gamma);}}
         
@@ -342,8 +342,8 @@ void initialise(Grid& grid, SimulationConfig& cfg){
         //Boundary Conditions
         cfg.bcs_x0=SimulationConfig::BoundaryCondition::Periodic;
         cfg.bcs_xf=SimulationConfig::BoundaryCondition::Periodic;
-        cfg.bcs_y0=SimulationConfig::BoundaryCondition::Reflective;
-        cfg.bcs_yf=SimulationConfig::BoundaryCondition::Reflective;
+        cfg.bcs_y0=SimulationConfig::BoundaryCondition::Conducting;
+        cfg.bcs_yf=SimulationConfig::BoundaryCondition::Conducting;
 
         //Initial Parameters:
         double pi = 4*std::atan(1);
@@ -456,7 +456,7 @@ void initialise(Grid& grid, SimulationConfig& cfg){
     
     for(size_t i=g; i<nx+g;i++){
         for(size_t j=g;j<ny+g;j++){
-            double new_eta=(*cfg.resistivity_profile)(i-g,j-g);//Virtual functions can give overhead but this is only called for intialisation
+            double new_eta=(*cfg.resistivity_profile)(grid.x[i-g],grid.y[j-g]);//Virtual functions can give overhead but this is only called for intialisation
             grid.eta(i,j)=new_eta;
             if(std::fabs(new_eta)> max_eta){
                 max_eta=std::fabs(new_eta);

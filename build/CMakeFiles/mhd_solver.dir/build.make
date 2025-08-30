@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject"
+CMAKE_SOURCE_DIR = /Users/tomhollingsworth/Documents/ResistiveMHDProject
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build"
+CMAKE_BINARY_DIR = /Users/tomhollingsworth/Documents/ResistiveMHDProject/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mhd_solver.dir/depend.make
@@ -73,172 +73,172 @@ CMakeFiles/mhd_solver.dir/codegen:
 .PHONY : CMakeFiles/mhd_solver.dir/codegen
 
 CMakeFiles/mhd_solver.dir/src/main.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/main.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/main.cpp
+CMakeFiles/mhd_solver.dir/src/main.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/main.cpp
 CMakeFiles/mhd_solver.dir/src/main.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mhd_solver.dir/src/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/main.cpp.o -MF CMakeFiles/mhd_solver.dir/src/main.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/main.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mhd_solver.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/main.cpp.o -MF CMakeFiles/mhd_solver.dir/src/main.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/main.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/main.cpp
 
 CMakeFiles/mhd_solver.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/main.cpp" > CMakeFiles/mhd_solver.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/main.cpp > CMakeFiles/mhd_solver.dir/src/main.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/main.cpp" -o CMakeFiles/mhd_solver.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/main.cpp -o CMakeFiles/mhd_solver.dir/src/main.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/Grid.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/Grid.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/Grid.cpp
+CMakeFiles/mhd_solver.dir/src/Grid.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Grid.cpp
 CMakeFiles/mhd_solver.dir/src/Grid.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mhd_solver.dir/src/Grid.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Grid.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Grid.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Grid.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Grid.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mhd_solver.dir/src/Grid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Grid.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Grid.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Grid.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Grid.cpp
 
 CMakeFiles/mhd_solver.dir/src/Grid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/Grid.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Grid.cpp" > CMakeFiles/mhd_solver.dir/src/Grid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Grid.cpp > CMakeFiles/mhd_solver.dir/src/Grid.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/Grid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/Grid.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Grid.cpp" -o CMakeFiles/mhd_solver.dir/src/Grid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Grid.cpp -o CMakeFiles/mhd_solver.dir/src/Grid.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/Initialise.cpp
+CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Initialise.cpp
 CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Initialise.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Initialise.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Initialise.cpp
 
 CMakeFiles/mhd_solver.dir/src/Initialise.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/Initialise.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Initialise.cpp" > CMakeFiles/mhd_solver.dir/src/Initialise.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Initialise.cpp > CMakeFiles/mhd_solver.dir/src/Initialise.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/Initialise.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/Initialise.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Initialise.cpp" -o CMakeFiles/mhd_solver.dir/src/Initialise.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Initialise.cpp -o CMakeFiles/mhd_solver.dir/src/Initialise.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/MHD_flux.cpp
+CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/MHD_flux.cpp
 CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o -MF CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/MHD_flux.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o -MF CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/MHD_flux.cpp
 
 CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/MHD_flux.cpp" > CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/MHD_flux.cpp > CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/MHD_flux.cpp" -o CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/MHD_flux.cpp -o CMakeFiles/mhd_solver.dir/src/MHD_flux.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/SavingRoutine.cpp
+CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SavingRoutine.cpp
 CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o -MF CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SavingRoutine.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o -MF CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SavingRoutine.cpp
 
 CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SavingRoutine.cpp" > CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SavingRoutine.cpp > CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SavingRoutine.cpp" -o CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SavingRoutine.cpp -o CMakeFiles/mhd_solver.dir/src/SavingRoutine.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/StateVector.cpp
+CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/StateVector.cpp
 CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o -MF CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/StateVector.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o -MF CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/StateVector.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/StateVector.cpp
 
 CMakeFiles/mhd_solver.dir/src/StateVector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/StateVector.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/StateVector.cpp" > CMakeFiles/mhd_solver.dir/src/StateVector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/StateVector.cpp > CMakeFiles/mhd_solver.dir/src/StateVector.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/StateVector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/StateVector.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/StateVector.cpp" -o CMakeFiles/mhd_solver.dir/src/StateVector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/StateVector.cpp -o CMakeFiles/mhd_solver.dir/src/StateVector.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/SLIC.cpp
+CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SLIC.cpp
 CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o -MF CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SLIC.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o -MF CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/SLIC.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SLIC.cpp
 
 CMakeFiles/mhd_solver.dir/src/SLIC.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/SLIC.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SLIC.cpp" > CMakeFiles/mhd_solver.dir/src/SLIC.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SLIC.cpp > CMakeFiles/mhd_solver.dir/src/SLIC.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/SLIC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/SLIC.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/SLIC.cpp" -o CMakeFiles/mhd_solver.dir/src/SLIC.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/SLIC.cpp -o CMakeFiles/mhd_solver.dir/src/SLIC.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/TimeStep.cpp
+CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/TimeStep.cpp
 CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o -MF CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/TimeStep.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o -MF CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/TimeStep.cpp
 
 CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/TimeStep.cpp" > CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/TimeStep.cpp > CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/TimeStep.cpp" -o CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/TimeStep.cpp -o CMakeFiles/mhd_solver.dir/src/TimeStep.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/c_f.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/c_f.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/c_f.cpp
+CMakeFiles/mhd_solver.dir/src/c_f.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/c_f.cpp
 CMakeFiles/mhd_solver.dir/src/c_f.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mhd_solver.dir/src/c_f.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/c_f.cpp.o -MF CMakeFiles/mhd_solver.dir/src/c_f.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/c_f.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/c_f.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mhd_solver.dir/src/c_f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/c_f.cpp.o -MF CMakeFiles/mhd_solver.dir/src/c_f.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/c_f.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/c_f.cpp
 
 CMakeFiles/mhd_solver.dir/src/c_f.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/c_f.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/c_f.cpp" > CMakeFiles/mhd_solver.dir/src/c_f.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/c_f.cpp > CMakeFiles/mhd_solver.dir/src/c_f.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/c_f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/c_f.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/c_f.cpp" -o CMakeFiles/mhd_solver.dir/src/c_f.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/c_f.cpp -o CMakeFiles/mhd_solver.dir/src/c_f.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/psi_source_term.cpp
+CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/psi_source_term.cpp
 CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o -MF CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/psi_source_term.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o -MF CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/psi_source_term.cpp
 
 CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/psi_source_term.cpp" > CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/psi_source_term.cpp > CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/psi_source_term.cpp" -o CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/psi_source_term.cpp -o CMakeFiles/mhd_solver.dir/src/psi_source_term.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/HLLD.cpp
+CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/HLLD.cpp
 CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o -MF CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/HLLD.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o -MF CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/HLLD.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/HLLD.cpp
 
 CMakeFiles/mhd_solver.dir/src/HLLD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/HLLD.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/HLLD.cpp" > CMakeFiles/mhd_solver.dir/src/HLLD.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/HLLD.cpp > CMakeFiles/mhd_solver.dir/src/HLLD.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/HLLD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/HLLD.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/HLLD.cpp" -o CMakeFiles/mhd_solver.dir/src/HLLD.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/HLLD.cpp -o CMakeFiles/mhd_solver.dir/src/HLLD.cpp.s
 
 CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: CMakeFiles/mhd_solver.dir/flags.make
-CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp
+CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Resistive_source_terms.cpp
 CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: CMakeFiles/mhd_solver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o -c "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o -MF CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o.d -o CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o -c /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Resistive_source_terms.cpp
 
 CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp" > CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Resistive_source_terms.cpp > CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.i
 
 CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp" -o CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Resistive_source_terms.cpp -o CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.s
 
 # Object files for target mhd_solver
 mhd_solver_OBJECTS = \
@@ -273,7 +273,7 @@ mhd_solver: CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o
 mhd_solver: CMakeFiles/mhd_solver.dir/build.make
 mhd_solver: math/libmath_module.a
 mhd_solver: CMakeFiles/mhd_solver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable mhd_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable mhd_solver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mhd_solver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -285,6 +285,6 @@ CMakeFiles/mhd_solver.dir/clean:
 .PHONY : CMakeFiles/mhd_solver.dir/clean
 
 CMakeFiles/mhd_solver.dir/depend:
-	cd "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject" "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject" "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build" "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build" "/Users/tomhollingsworth/Documents/LSC Internship/ResistiveMHDProject/build/CMakeFiles/mhd_solver.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /Users/tomhollingsworth/Documents/ResistiveMHDProject/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/tomhollingsworth/Documents/ResistiveMHDProject /Users/tomhollingsworth/Documents/ResistiveMHDProject /Users/tomhollingsworth/Documents/ResistiveMHDProject/build /Users/tomhollingsworth/Documents/ResistiveMHDProject/build /Users/tomhollingsworth/Documents/ResistiveMHDProject/build/CMakeFiles/mhd_solver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/mhd_solver.dir/depend
 

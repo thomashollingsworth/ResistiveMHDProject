@@ -1,7 +1,7 @@
 CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/src/Resistive_source_terms.cpp \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Resistive_source_terms.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Array2D.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/src/Resistive_source_terms.cpp \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Resistive_source_terms.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Array2D.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h \
@@ -847,12 +847,12 @@ CMakeFiles/mhd_solver.dir/src/Resistive_source_terms.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/math/VectorCalc.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/math/Vector3.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/SimulationConfig.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/Grid.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/StateVector.h \
-  /Users/tomhollingsworth/Documents/LSC\ Internship/ResistiveMHDProject/include/BoundaryConditions.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/math/VectorCalc.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/math/Vector3.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/SimulationConfig.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/Grid.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/StateVector.h \
+  /Users/tomhollingsworth/Documents/ResistiveMHDProject/include/BoundaryConditions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
