@@ -1,7 +1,6 @@
 #Choose files for git to ignore
 
 #Files I dont want to track to github
-animations/
 literature/
 report/
 testresults/
