@@ -51,6 +51,21 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 
 
 ## GEM Test
+- Induces a tearing mode instability at the centre of a single equilibrated current sheet by applying a perturbing magnetic field.
+- Results in magnetic reconnection and plasmoid ejection from the centre of the domain.
+
+<table>
+  <tr>
+    <td>
+      <img src="ReadMeFigs/eta_10minus4.png" alt="Orszang-Tang high resistivity density plot" width="300"/><br/>
+      <p align="center"><em>Figure 1: Density plot for η=10^(-4) no plasmoid formation visible </em></p>
+    </td>
+    <td>
+      <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang low resistivity density plot" width="300"/><br/>
+      <p align="center"><em>Figure 2: Density plot for η=10^(-5) magnetic reconnection at centre visible</em></p>
+    </td>
+  </tr>
+</table>
 
 
 
