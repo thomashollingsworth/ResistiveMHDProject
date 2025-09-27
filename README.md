@@ -56,16 +56,18 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 
 <table>
   <tr>
-    <td>
-      <img src="ReadMeFigs/eta_10minus4.png" alt="Orszang-Tang high resistivity density plot" width="300"/><br/>
-      <p align="center"><em>Figure 1: Density plot for η=10^(-4) no plasmoid formation visible </em></p>
+    <td align="center">
+      <img src="ReadMeFigs/GEM1.png" width="300"/>
     </td>
-    <td>
-      <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang low resistivity density plot" width="300"/><br/>
-      <p align="center"><em>Figure 2: Density plot for η=10^(-5) magnetic reconnection at centre visible</em></p>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="ReadMeFigs/GEM2.png" width="300"/>
     </td>
   </tr>
 </table>
+
+<p align="center"><strong>Figure 4:</strong> Plots of current density showing magnetic reconnection due to tearing mode.</p>
 
 
 
