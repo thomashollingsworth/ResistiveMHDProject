@@ -15,15 +15,45 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 <table>
   <tr>
     <td>
-      <img src="ReadMeFigs/eta_10minus4.png" width="300"/><br/>
-      <p align="center"><em>Figure 1: η=10^(-4) no plasmoid formation visible </em></p>
+      <img src="ReadMeFigs/eta_10minus4.png" alt="Orszang-Tang high resistivity density plot" width="300"/><br/>
+      <p align="center"><em>Figure 1: Density plot for η=10^(-4) no plasmoid formation visible </em></p>
     </td>
     <td>
-      <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang Animation" width="300"/><br/>
-      <p align="center"><em>Figure 2: η=10^(-5) magnetic reconnection at centre visible</em></p>
+      <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang low resistivity density plot" width="300"/><br/>
+      <p align="center"><em>Figure 2: Density plot for η=10^(-5) magnetic reconnection at centre visible</em></p>
     </td>
   </tr>
 </table>
+
+## Double Current Sheet
+(https://www.astro.princeton.edu/~jstone/Athena/tests/current-sheet/current-sheet.html)
+- Two initally stable current sheets interact leading to growing perturbations and magnetic reconnection and island formation
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="ReadMeFigs/DS1.png" width="300"/><br/>
+      <em>η = 10⁻⁴</em>
+    </td>
+    <td align="center">
+      <img src="ReadMeFigs/DS2.png" width="300"/><br/>
+      <em>η = 10⁻⁵</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="ReadMeFigs/DS3.png" width="300"/><br/>
+      <em>η = 10⁻⁶</em>
+    </td>
+    <td align="center">
+      <img src="ReadMeFigs/DS4.png" width="300"/><br/>
+      <em>η = 10⁻⁷</em>
+    </td>
+  </tr>
+</table>
+
+<p align="center"><strong>Figure 3:</strong> Plots of magnetic field lines for double current sheet test.</p>
+
 
 
 
