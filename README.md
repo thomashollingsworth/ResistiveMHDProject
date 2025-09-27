@@ -67,7 +67,7 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
   </tr>
 </table>
 
-<p align="center"><strong>Figure 4:</strong> Plots of current density showing magnetic reconnection due to tearing mode.</p>
+<p align="left"><strong>Figure 4:</strong> Plots of current density showing magnetic reconnection due to tearing mode.</p>
 
 
 
