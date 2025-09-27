@@ -20,7 +20,7 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
     </td>
     <td>
       <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang Animation" width="300"/><br/>
-      <p align="center"><em>Figure 2: η=10^(-4) magnetic reconnection at centre visible</em></p>
+      <p align="center"><em>Figure 2: η=10^(-5) magnetic reconnection at centre visible</em></p>
     </td>
   </tr>
 </table>
