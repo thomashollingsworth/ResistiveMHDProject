@@ -27,7 +27,7 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 
 ## Double Current Sheet
 (https://www.astro.princeton.edu/~jstone/Athena/tests/current-sheet/current-sheet.html)
-- Two initally stable current sheets interact leading to growing perturbations and magnetic reconnection and island formation
+- Two initally stable current sheets interact leading to growing perturbations, magnetic reconnection and magnetic island formation.
 <table>
   <tr>
     <td align="center">
@@ -46,7 +46,7 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
     </td>
   </tr>
 </table>
-<p align="center"><strong>Figure 3:</strong> Plots of magnetic field lines for double current sheet test.</p>
+<p align="left"><strong>Figure 3:</strong> Plots of magnetic field lines for double current sheet test.</p>
 
 
 
