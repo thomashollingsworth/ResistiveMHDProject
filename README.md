@@ -15,12 +15,12 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 <table>
   <tr>
     <td>
-      <img src="FIGURES/KHAni.gif" width="300"/><br/>
-      <p align="center"><em>Figure 1: Animation of sqrt(Bx^2 + By^2) / Bz (poloidal to toroidal field strength ratio) for Kelvin-Helmholtz Instability test using MUSCL-Hancock Scheme</em></p>
+      <img src="ReadMeFigs/eta_10minus4.png" width="300"/><br/>
+      <p align="center"><em>Figure 1: η=10^(-4) no plasmoid formation visible </em></p>
     </td>
     <td>
-      <img src="FIGURES/HighResDensityAni.gif" alt="Orszang-Tang Animation" width="300"/><br/>
-      <p align="center"><em>Figure 2: Animation of Density for Orszang-Tang vortex using MUSCL-Hancock Scheme</em></p>
+      <img src="ReadMeFigs/eta_10minus5.png" alt="Orszang-Tang Animation" width="300"/><br/>
+      <p align="center"><em>Figure 2: η=10^(-4) magnetic reconnection at centre visible</em></p>
     </td>
   </tr>
 </table>
