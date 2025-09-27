@@ -33,21 +33,21 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
   <tr>
     <td align="center">
       <img src="ReadMeFigs/DS1.png" width="300"/><br/>
-      <em>η = 10⁻⁴</em>
+     
     </td>
     <td align="center">
       <img src="ReadMeFigs/DS2.png" width="300"/><br/>
-      <em>η = 10⁻⁵</em>
+
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="ReadMeFigs/DS3.png" width="300"/><br/>
-      <em>η = 10⁻⁶</em>
+
     </td>
     <td align="center">
       <img src="ReadMeFigs/DS4.png" width="300"/><br/>
-      <em>η = 10⁻⁷</em>
+
     </td>
   </tr>
 </table>
