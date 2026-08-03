@@ -51,8 +51,7 @@ Built a 2D resistive MHD solver in C++ and investigated a range of standard test
 
 
 ## GEM Test
-- Induces a tearing mode instability at the centre of a single equilibrated current sheet by applying a perturbing magnetic field.
-- Results in magnetic reconnection and plasmoid ejection from the centre of the domain.
+
 
 <table>
   <tr>
